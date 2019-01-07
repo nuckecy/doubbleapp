@@ -1,8 +1,8 @@
 @media only screen and (max-width: 600px) {
   .nav {visibility: collapse;}
-  .main { padding: 20px; margin: -80px auto;}
+  .main { padding: 25px; margin: -80px auto;}
   .w-10 { width: 30% !important; }
-  .login-box, .forgot-box {padding: 20px;}
+  .login-box, .forgot-box {margin: 10px;}
 }
 
 @media screen 
