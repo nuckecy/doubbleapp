@@ -19,117 +19,57 @@
         type="text/css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-    <style>
-        html,
-        body {
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        }
-
-        .login-contain {
-            height: 100%;
-            display: -ms-flexbox;
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-box;
-            display: box;
-
-            -ms-flex-direction: row;
-            -webkit-box-orient: horizontal;
-            -moz-box-orient: horizontal;
-            -ms-box-orient: horizontal;
-            box-orient: horizontal;
-        }
-
-        .nav {
-            background: aliceblue;
-            width: 40%;
-            -ms-flex: 0 40%;
-            -webkit-box-flex: 0;
-            -moz-box-flex: 0;
-            -ms-box-flex: 0;
-            box-flex: 0;
-        }
-
-
-        .main {
-            -ms-flex: 1;
-            -webkit-box-flex: 1;
-            -moz-box-flex: 1;
-            -ms-box-flex: 1;
-            box-flex: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/devices.css">
 </head>
 
 <body>
 
-    <div class="login-contain">
-        <div class="nav p-5">
-            <div class="px-5">
-                <div class="row pt-5 pb-2">
-                    <div class="col-md-12 mx-auto">
-                        <img src="assets/img/doubble-logo.png" class="w-40" alt="Doubble Logo">
+        <div class="text-white align-items-center d-flex bg-image">
+                <div class="container">
+                  <div class="row text-left">
+                    <div class="col-md-12 mx-auto mt-5">
+                      <img src="assets/img/doubble-logo.png" class="w-10" alt="Doubble Logo">
                     </div>
-                </div>
-                <h3 class="pt-5">Create your free account</h3>
-                <p>Why it's worth to register? Because Wozber will provide you the highest quality services:</p>
-                <div>
-                    <ul>
-                        <li>Save your resume progress</li>
-                        <li>Download your resume in PDF</li>
-                        <li>Use your free account as long as you want</li>
-                        <li>And of course, no spamming at any time!</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="main">
-            <div class="container py-5">
-                <div class="row pt-2">
-                    <div class="offset-md-4 rounded col-12 col-sm-12 p-4 col-md-6 col-lg-4 bg-light">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
-                                <h5 class="mb-3 text-left" contenteditable="true"><b>Sign-in</b></h5>
+                  </div>
+                  <div class="row pt-5">
+                    <div class="offset-md-4 col-12 col-sm-12 p-4 col-md-6 col-lg-4">
+                        <h5 class="mb-3 text-center text-primary"><b>Hello, welcome back!</b></h5>
+                    </div>
+                    <div class="offset-md-4 col-12 col-sm-12 p-4 col-md-6 col-lg-4 bg-light shadow-md">
+                      <div class="row">
+                        <div class="offset-md-7 col-md-6 col-6 col-sm-6 col-lg-6">
+                          <span class="text-right"><a href="forgot.html">Forgot password?</a></span>
+                        </div>
+                      </div>
+                      <form class="needs-validation" novalidate="">
+                        <div class="row mt-4">
+                            <div class="form-group col-md-12 mb-4">
+                                <input type="text" class="input form-control form-border" id="username" required autocomplete="off">
+                                <label class="mb-0 form-control-placeholder" for="username">Username/Email</label>
+                                <div class="invalid-feedback"> Username is required </div>
                             </div>
-                            <div class="col-md-6 col-6 col-sm-6 col-lg-6 text-right">
-                                <span><a class="noul for-pass" href="forgot.html"><b>Forgot password?</b></a></span>
+                            <div class="form-group col-md-12">
+                                <input type="password" class="form-control form-border" id="password" required autocomplete="off">
+                                <label class="mb-0 form-control-placeholder" for="password">Password</label>
+                                <div class="invalid-feedback"> Password is required </div>
                             </div>
                         </div>
-                        <form class="needs-validation" novalidate="">
-                            <div class="mb-3">
-                                <div class="input-group"><label for="Email"></label>
-                                    <input type="text" class="form-control form-border bagde-email" aria-label="Email"
-                                        aria-labelledby="Email" id="Email" name="Email" placeholder="Email" required="">
-                                    <div class="invalid-feedback" style="width: 100%;"> Your email is required. </div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="input-group"><label for="Password"></label>
-                                    <input type="text" class="form-control form-border bagde-pass" aria-label="Password"
-                                        aria-labelledby="Password" id="Password" name="Password" placeholder="Password"
-                                        required="">
-                                    <div class="invalid-feedback" style="width: 100%;"> Your password is required.
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn btn-block btn-sm btn-flat" type="submit"><span class="btn-text">Sign in</span></button>
-                        </form>
+                        <button class="btn btn-block btn-md btn-info" type="submit"><span class="btn-text text-uppercase">Sign in</span></button>
+                      </form>
                     </div>
-                </div>
-                <div class="py-2">
+                  </div>
+                  <div class="py-2">
                     <div class="row">
-                        <div class="text-center col-md-4 mx-auto">
-                            <p class="text-left text-light"><span><strong>Don't have an account?</strong></span><br><span
-                                    class="sign-up-text"><a class="noul" href="register.html">Sign up for free</a></span></p>
-                        </div>
+                      <div class="text-center col-md-4 mx-auto mt-3">
+                        <p class="text-center text-secondary">
+                            <span>Don't have an account?</span>
+                            <span class="text-info"><a class="noul" href="register.html">Sign up for free</a></span>
+                        </p>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
+              </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

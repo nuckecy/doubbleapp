@@ -1,5 +1,7 @@
-/* Registration Page Structure */
+/* Minor Styles */
+.btn-text {font-size: 1rem}
 
+/* Registration Page Structure */
 .login-contain {
     height: 100%;
     display: -ms-flexbox;
@@ -24,7 +26,6 @@
     -ms-box-flex: 0;
     box-flex: 0;
 }
-
 
 .main {
     -ms-flex: 1;
