@@ -1,0 +1,12 @@
+@media only screen and (max-width: 600px) {
+  .nav {visibility: collapse;}
+  .main { padding: 20px; margin: -80px auto;}
+}
+
+@media screen 
+  and (min-device-width: 1440px) 
+  and (max-device-width: 2000px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+{
+
+}

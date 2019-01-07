@@ -1,0 +1,54 @@
+
+<html>
+<head>
+        <style>
+
+                .wrapper {
+                  display: flex;  
+                  /* flex-flow: row wrap; */
+                  flex-direction: row;
+                  flex-wrap: nowrap;
+                  align-items: stretch;
+                }
+                
+                .wrapper > * {
+                  padding: 10px;
+                  /* flex: 1 100%; */
+                }
+                
+               
+                
+                .aside-1 {
+                  background: gold;
+                  flex-grow: 1;
+                  flex-basis: auto;
+                }
+                
+                .aside-2 {
+                  background: hotpink;
+                  flex-grow: 2;
+                  flex-basis: 100% 100%;
+                }
+                
+                /* @media all and (min-width: 600px) {
+                  .aside { flex: 1 0 0; }
+                }
+                
+                @media all and (min-width: 800px) {
+                  .main    { flex: 3 0px; }
+                  .aside-1 { order: 1; } 
+                  .main    { order: 2; }
+                  .aside-2 { order: 3; }
+                  .footer  { order: 4; }
+                } */
+                
+
+                </style>
+</head>
+<body>
+        <div class="wrapper">
+                <div class="aside aside-1">Aside 1</div>
+                <aside class="aside aside-2">Aside 2</div>
+            </div>
+</body>
+</html>

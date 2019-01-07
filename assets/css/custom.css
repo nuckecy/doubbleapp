@@ -1,0 +1,80 @@
+/* Registration Page Structure */
+
+.login-contain {
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    box-orient: horizontal;
+}
+
+.nav {
+    background: aliceblue;
+    width: 36%;
+    -ms-flex: 0 40%;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -ms-box-flex: 0;
+    box-flex: 0;
+}
+
+
+.main {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+}
+
+/* Spacer for Registration form */
+.mt-140{margin-top:15%;}
+
+/* Animated Input */
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-control-placeholder {
+    position: absolute;
+    top: 0;
+    padding: 0px;
+    transition: all 200ms;
+    opacity: 0.6;
+    color: #263d61;
+  }
+  .form-control-placeholder:focus {color:#00CCFF;}
+  
+  .form-control:focus + .form-control-placeholder,
+  .form-control:valid + .form-control-placeholder {
+    font-size: 75%;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    opacity: 1;
+  }
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: none;
+    color:#263d61;
+    border-bottom: 1px solid #f2f1f4;
+    -webkit-text-fill-color: #263d61;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;;
+}
