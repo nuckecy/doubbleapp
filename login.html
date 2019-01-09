@@ -8,45 +8,56 @@
     <meta name="msapplication-TileColor" content="#a00065">
     <meta name="msapplication-TileImage" content="https://d32wlusbkxfia2.cloudfront.net/v2/assets/img/doubble-icon.png">
     <meta name="theme-color" content="#00CCFF">
-    <link rel="manifest" href="https://d32wlusbkxfia2.cloudfront.net/v2/assets/manifest.json">
+    <link rel="manifest" src="https://d32wlusbkxfia2.cloudfront.net/v2/assets/manifest.json">
 
-    <title>Password Recovery - Doubble by Sterling</title>
-    <meta name="description" content="Recover your Password. Doubble is an automated investment platform for investment at your convenience and get back up to 200% over a period. With Doubble, you choose to invest in Naira or US Dollar, either in one contribution (lump sum) or monthly, quarterly, bi-annual or annual automated contributions.">
+    <title>My Doubble Login - Doubble by Sterling</title>
+    <meta name="description" content="Login to your account and start Investment. Doubble is an automated investment platform for investment at your convenience and get back up to 200% over a period. With Doubble, you choose to invest in Naira or US Dollar, either in one contribution (lump sum) or monthly, quarterly, bi-annual or annual automated contributions.">
     <meta name="keywords" content="money, Investment, Superb returns, Automated Investment platform, Investment products, Guaranteed returns, Doubble, double, long term investment, short term investment, money market, treasury bills, personal finance, personal financial planning, financial">
     <meta name="author" content="Doubble by Sterling Bank Plc">
-    <link rel="icon" href="https://d32wlusbkxfia2.cloudfront.net/v2/assets/favicon.ico">
+    <link rel="icon" src="https://d32wlusbkxfia2.cloudfront.net/v2/assets/favicon.ico">
+
     <!-- CSS dependencies -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         type="text/css">
-    <link rel="stylesheet" href="https://d32wlusbkxfia2.cloudfront.net/v2/assets/css/main.css">
-    <link rel="stylesheet" href="https://d32wlusbkxfia2.cloudfront.net/v2/assets/css/custom.css">
-    <link rel="stylesheet" href="https://d32wlusbkxfia2.cloudfront.net/v2/assets/css/devices.css">
+    <link rel="stylesheet" src="https://d32wlusbkxfia2.cloudfront.net/v2/assets/css/main.css">
+    <link rel="stylesheet" src="https://d32wlusbkxfia2.cloudfront.net/v2/assets/css/custom.css">
+    <link rel="stylesheet" src="https://d32wlusbkxfia2.cloudfront.net/v2/assets/css/devices.css">
 </head>
 
 <body>
-
     <div class="text-white align-items-center d-flex bg-image">
         <div class="container">
-            <div class="row text-left mb-5">
+            <div class="row text-left">
                 <div class="col-md-12 mx-auto mt-3">
                     <img src="https://d32wlusbkxfia2.cloudfront.net/v2/assets/img/doubble-logo.png" class="w-10" alt="Doubble Logo">
                 </div>
             </div>
-            <div class="row login-box mt-5" style="padding-top:25px;">
-                <div class="offset-md-4 col-12 col-sm-12 col-md-6 col-lg-4 mt-5">
-                    <h5 class="mb-4 text-center text-primary"><b>Password Recovery</b></h5>
+            <div class="row pt-5 login-box mt-5">
+                <div class="offset-md-4 col-12 col-sm-12 p-4 col-md-6 col-lg-4">
+                    <h5 class="mb-3 text-center text-primary"><b>Hello, welcome back!</b></h5>
                 </div>
-                <div class="mt-3 offset-md-4 col-12 col-sm-12 p-4 col-md-6 col-lg-4 bg-light shadow-md">
+                <div class="offset-md-4 col-12 col-sm-12 p-4 col-md-6 col-lg-4 bg-light shadow-md">
+                    <div class="row">
+                        <div class="offset-md-7 col-md-6 col-6 col-sm-12 col-lg-6">
+                            <span class="text-right"><a href="forgot.html">Forgot password?</a></span>
+                        </div>
+                    </div>
                     <form class="needs-validation" novalidate="">
                         <div class="row mt-4">
                             <div class="form-group col-md-12 mb-4">
                                 <input type="text" class="input form-control form-border" id="username" required
                                     autocomplete="off">
-                                <label class="mb-0 form-control-placeholder" for="username">Account Email Address</label>
-                                <div class="invalid-feedback"> Account Email is required </div>
+                                <label class="mb-0 form-control-placeholder" for="username">Username/Email</label>
+                                <div class="invalid-feedback"> Username is required </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="password" class="form-control form-border" id="password" required
+                                    autocomplete="off">
+                                <label class="mb-0 form-control-placeholder" for="password">Password</label>
+                                <div class="invalid-feedback"> Password is required </div>
                             </div>
                         </div>
-                        <button class="btn btn-block btn-md btn-info" type="submit"><span class="btn-text text-uppercase">Recover</span></button>
+                        <button class="btn btn-block btn-md btn-info" type="submit"><span class="btn-text text-uppercase">Sign in</span></button>
                     </form>
                 </div>
             </div>
@@ -56,10 +67,6 @@
                         <p class="text-center text-secondary">
                             <span>Don't have an account?</span>
                             <span class="text-info"><a class="noul" href="register.html">Sign up for free</a></span>
-                        </p>
-                        <p class="text-center text-secondary mt-0">
-                            <span>Already a Member?</span>
-                            <span class="text-info"><a class="noul" href="login.html">Login Now</a></span>
                         </p>
                     </div>
                 </div>

@@ -1,6 +1,21 @@
 /* Minor Styles */
 .btn-text {font-size: 1rem}
 
+/* FLOATING LOGO BOTTOM */
+.feedback {
+    background-color: #31B0D5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: #46b8da;
+  }
+
+  #mybutton {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+  }
+
 /* Registration Page Structure */
 .login-contain {
     height: 100%;
