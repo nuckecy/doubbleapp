@@ -9,12 +9,13 @@
     <meta name="msapplication-TileImage" content="https://d32wlusbkxfia2.cloudfront.net/v2/assets/img/doubble-icon.png">
     <meta name="theme-color" content="#00CCFF">
     <link rel="manifest" href="https://d32wlusbkxfia2.cloudfront.net/v2/assets/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.min.css">
+    <link rel="icon" href="https://d32wlusbkxfia2.cloudfront.net/v2/assets/favicon.ico">
 
     <title>New Profile Registration - Doubble by Sterling</title>
     <meta name="description" content="Create a Free Account on Doubble - Doubble is an automated investment platform for investment at your convenience and get back up to 200% over a period. With Doubble, you choose to invest in Naira or US Dollar, either in one contribution (lump sum) or monthly, quarterly, bi-annual or annual automated contributions.">
     <meta name="keywords" content="money, Investment, Superb returns, Automated Investment platform, Investment products, Guaranteed returns, Doubble, double, long term investment, short term investment, money market, treasury bills, personal finance, personal financial planning, financial, Superb returns, Automated Investment platform, Investment products, Guaranteed returns, Doubble, double, long term investment, short term investment, money market, treasury bills, personal finance, personal financial planning, financial">
     <meta name="author" content="Doubble by Sterling Bank Plc">
-    <link rel="icon" href="https://d32wlusbkxfia2.cloudfront.net/v2/assets/favicon.ico">
 
     <!-- CSS dependencies -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -79,7 +80,7 @@
                                     <div class="invalid-feedback"> BVN is required </div>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <input type="text" class="form-control form-border" id="dob" required autocomplete="off">
+                                    <input type="text" class="dateselect form-control form-border" id="dob" required autocomplete="off">
                                     <label class="mb-0 form-control-placeholder" for="dob">Date of Birth</label>
                                     <div class="invalid-feedback"> Date of Birth is required </div>
                                 </div>
@@ -117,13 +118,26 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <!-- <script src="https://d32wlusbkxfia2.cloudfront.net/v2/assets/js/validation.js"></script> -->
+    <script src="https://d32wlusbkxfia2.cloudfront.net/v2/assets/js/parallax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+            $('[data-toggle="tooltip"]').tooltip();
+            
+            $('.dateselect').datepicker({
+                format: 'mm/dd/yyyy',
+                // startDate: '-3d'
+            });
+        });
+    </script>
 </body>
 
 </html>

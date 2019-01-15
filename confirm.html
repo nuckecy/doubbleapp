@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.min.css">
     <link rel="icon" href="https://d32wlusbkxfia2.cloudfront.net/v2/assets/favicon.ico">
     
-    <title>New Classic Investment - Step 1 - Doubble by Sterling</title>
+    <title>Confirm Transaction - Doubble by Sterling</title>
     <meta name="description" content="New Classic Investment - Doubble is an automated investment platform for investment at your convenience and get back up to 200% over a period. With Doubble, you choose to invest in Naira or US Dollar, either in one contribution (lump sum) or monthly, quarterly, bi-annual or annual automated contributions.">
     <meta name="keywords" content="money, Investment, Superb returns, Automated Investment platform, Investment products, Guaranteed returns, Doubble, double, long term investment, short term investment, money market, treasury bills, personal finance, personal financial planning, financial">
     <meta name="author" content="Doubble by Sterling Bank Plc">
@@ -53,10 +53,10 @@
         <div class="container pt-5">
             <div class="row">
                 <div class="col-md-12 pt-1">
-                    <h1 class="display-1 welcome-title">Invest for the Future</h1>
+                    <h1 class="display-1 welcome-title">You are almost there...</h1>
                 </div>
             </div>
-            <hr class="mb-0">
+            <!-- <hr class="mb-0"> -->
         </div>
     </div>
     <div class="py-2 mb-5">
@@ -69,109 +69,54 @@
                             <div class="offset-md-1 col-md-10">
                                 <form class="blockquote flex-column rounded-sm pt-4 shadow-sm" >
                                         <div class="row mt-0">
-                                            <h1 class="pl-3 lead welcome-title font-weight-bold">New Classic Investment</h1>
-                                            <div class="form-group col-md-12 mb-4">
-                                                <div class="select">
-                                                    <select class="select-text" required>
-                                                        <option value="" disabled selected></option>
-                                                        <option value="1">Doubble 1</option>
-                                                        <option value="2">Doubble 3</option>
-                                                        <option value="3">Doubble 5</option>
-                                                        <option value="3">Lump Sum</option>
-                                                    </select>
-                                                    <span class="select-highlight"></span>
-                                                    <span class="select-bar"></span>
-                                                    <label class="select-label ">Select Investment Option</label>
-                                                    <small class="form-text text-muted font-weight-bold">This text is for description of the Investments options</small>
-                                                </div>
-                                                <!-- <hr class="mt-4"> -->
-                                            </div>
-                                            
+                                            <h3 class="pl-3 font-weight-bold mb-0">Transaction Confirmation</h3>
+                                            <small class="pl-3 pr-5 mt-0 form-text text-muted font-weight-bold">Please confirm the details of your transaction below. Click return to edit your options or submit to complete the transaction.</small>
                                         </div>
-
+                                        <hr class="mb-4">
                                         <div class="row">
-                                            <div class="form-group col-md-12 mb-1"><small class="form-text text-muted font-weight-bold">Select preferred Investment date</small></div>
-                                            <div class="form-group col-md-6 mb-4">
-                                                <div>
-                                                    <div class="md-radio md-radio-inline">
-                                                        <input id="yesCheck" type="radio" name="in" onclick="javascript:yesnoCheck();" checked>
-                                                        <label for="yesCheck">Invest Today</label>
-                                                    </div>
-                                                    <div class="md-radio md-radio-inline">
-                                                        <input id="noCheck" type="radio" name="in" onclick="javascript:yesnoCheck();">
-                                                        <label for="noCheck">Invest in the Future</label>
-                                                    </div>
-                                                </div>
+                                            <div class="col-md-6 mb-3">
+                                                <h5 class="mb-0">Doubble 3</h5>
+                                                <small class="mt-0 form-text text-muted font-weight-bold">Package</small>
                                             </div>
-                                            <div class="form-group col-md-6">
-                                                    <small class="form-text text-muted font-weight-bold" id="investtitle"></small>
-                                                    <input type="text" class="dateselect input form-control form-border" id="showdate" required="required"/>
-                                                    <div class="invalid-feedback"> Date is required </div>
+                                            <div class="col-md-6 mb-3">
+                                                <h5 class="mb-0">3 Years <span class="font-weight-bold" style="font-size: 13px;">(Dec 2018 - Jan 2021)</span></h5>
+                                                <small class="mt-0 form-text text-muted font-weight-bold">Duration</small>
                                             </div>
                                         </div>
 
                                         <div class="row">
-                                                <div class="form-group col-md-6">
-                                                    <input type="text" class="input form-control form-border" id="monthly" required autocomplete="off">
-                                                    <label class="mb-0 form-control-placeholder" for="monthly">Monthly Deposit</label>
-                                                    <div class="invalid-feedback"> Monthly Deposit is required </div>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <div class="select">
-                                                        <select class="select-text" required>
-                                                            <option value="" disabled selected></option>
-                                                            <option value="1">Option 1</option>
-                                                            <option value="2">Option 2</option>
-                                                            <option value="3">Option 3</option>
-                                                        </select>
-                                                        <span class="select-highlight"></span>
-                                                        <span class="select-bar"></span>
-                                                        <label class="select-label ">Funding Account</label>
-                                                    </div>
-                                                </div>
+                                            <div class="col-md-6 mb-3">
+                                                <h5 class="mb-0">N 123,900.00</h5>
+                                                <small class="mt-0 form-text text-muted font-weight-bold">Recurring Deposit</small>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <h5 class="mb-0">0189075443</h5>
+                                                <small class="mt-0 form-text text-muted font-weight-bold">Funding Account</small>
+                                            </div>
                                         </div>
 
                                         <div class="row">
-                                            <div class="form-group col-md-12 mb-1"><small class="form-text text-muted font-weight-bold">Select Investment Beneficiary</small></div>
-                                            <div class="form-group col-md-6 mb-1">
-                                                <div>
-                                                    <div class="md-radio md-radio-inline">
-                                                        <input id="yesBene" type="radio" name="be" onclick="javascript:yesnoBene();" checked>
-                                                        <label for="yesBene">Self Investment</label>
-                                                    </div>
-                                                    <div class="md-radio md-radio-inline">
-                                                        <input id="noBene" type="radio" name="be" onclick="javascript:yesnoBene();">
-                                                        <label for="noBene">Beneficiary Investment</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                    <small class="form-text text-muted font-weight-bold" id="benetitle"></small>
-                                                    <div class="select">
-                                                            <select class="select-text" id="showbene" required>
-                                                                <option value="" disabled selected></option>
-                                                                <option value="1">Option 1</option>
-                                                                <option value="2">Option 2</option>
-                                                                <option value="3">Option 3</option>
-                                                            </select>
-                                                            <span class="select-highlight"></span>
-                                                            <span class="select-bar"></span>
-                                                            <label class="select-label" id="selectlable"></label>
-                                                        </div>
+                                            <div class="col-md-12 mb-3">
+                                                <h5 class="mb-0">Ndifrekeabasi Toluwape Okonji</h5>
+                                                <small class="mt-0 form-text text-muted font-weight-bold">Beneficiary</small>
                                             </div>
                                         </div>
 
                                         <hr class="mb-4">
 
                                         <div class="row">
-                                            <div class="form-group col-md-12">
+                                            <div class="form-group col-md-6">
                                                 <input type="text" class="input form-control form-border" id="refcode" required autocomplete="off">
-                                                <label class="mb-0 form-control-placeholder" for="refcode">Referral Code</label>
-                                                <small class="form-text text-muted">Optional | If you have a Branch Referral Code, please input. Thank you.</small>
+                                                <label class="mb-0 form-control-placeholder" for="refcode">Verification Code</label>
+                                                <small class="form-text text-muted">Enter OTP sent to your email or Mobile.</small>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <button type="submit" value="Submit" class="btn btn-sm btn-secondary btn-block">Request OTP</button>
+                                                <small class="form-text text-muted font-weight-bold">Please click the button above to SEND OTP to your registered email address or mobile.</small>
                                             </div>
                                         </div>
 
-                                        <button type="submit" value="Submit" class="btn btn-sm btn-primary btn-block mb-3">Next</button>
+                                        <button type="submit" value="Submit" class="btn btn-sm btn-primary btn-block mb-3">Submit</button>
                                 </form>
                             </div>
                             </div>
