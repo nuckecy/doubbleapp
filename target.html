@@ -22,7 +22,7 @@
     <!-- CSS dependencies -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://d32wlusbkxfia2.cloudfront.net/v2/assets/css/main.css">
-    <link rel="stylesheet" href="https://d32wlusbkxfia2.cloudfront.net/v2/assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="https://d32wlusbkxfia2.cloudfront.net/v2/assets/css/devices.css">
     <script src="https://d32wlusbkxfia2.cloudfront.net/v2/assets/js/navbar-ontop.js"></script>
 </head>
@@ -68,87 +68,123 @@
                         <div class="container">
                             <div class="row">
                             <div class="offset-md-1 col-md-10">
-                                <form class="blockquote flex-column rounded-sm pt-4 shadow-sm" >
-                                        <div class="row mt-0">
-                                            <h1 class="pl-3 lead welcome-title font-weight-bold">New Target Investment</h1>
-                                            <div class="form-group col-md-12 mb-4">
-                                                <div class="select">
-                                                    <select class="select-text" required>
-                                                        <option value="" disabled selected></option>
-                                                        <option value="1">Doubble 1</option>
-                                                        <option value="2">Doubble 3</option>
-                                                        <option value="3">Doubble 5</option>
-                                                        <option value="3">Lump Sum</option>
-                                                    </select>
-                                                    <span class="select-highlight"></span>
-                                                    <span class="select-bar"></span>
-                                                    <label class="select-label ">Select Investment Option</label>
-                                                    <small class="form-text text-muted font-weight-bold">This text is for description of the Investments options</small>
-                                                </div>
-                                                <!-- <hr class="mt-4"> -->
-                                            </div>
-                                            
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="form-group col-md-12 mb-1"><small class="form-text text-muted font-weight-bold">Select preferred Investment date</small></div>
-                                            <div class="form-group col-md-12 mb-4">
-                                                <div class="flex-column">
-                                                    <div class="">
-                                                        <input id="yesCheck" type="radio" name="in" onclick="javascript:yesnoCheck();" checked>
-                                                        <label for="yesCheck">Invest Today</label>
-                                                    </div>
-                                                    <div class="">
-                                                        <input id="noCheck" type="radio" name="in" onclick="javascript:yesnoCheck();">
-                                                        <label for="noCheck">Invest in the Future</label>
-                                                    </div>
+                                    <form class="blockquote flex-column rounded-sm pt-4 shadow-sm" >
+                                            <div class="row mt-0 mb-2">
+                                                <h1 class="pl-3 lead welcome-title font-weight-bold">New Target Investment</h1>
+                                                <div class="form-group col-md-12 mb-4">
+                                                    <small class="form-text text-muted font-weight-bold mb-2">Select Preferred Currency</small>
+                                                    <group class="inline-radio">
+                                                        <div><input type="radio" name="member"><label>Dollar Investment</label></div>
+                                                        <div><input type="radio" name="member" checked><label>Naira Investment</label></div>
+                                                    </group>
                                                 </div>
                                             </div>
-                                            <div class="form-group col-md-6">
-                                                    <small class="form-text text-muted font-weight-bold" id="investtitle"></small>
-                                                    <input type="text" class="dateselect input form-control form-border" id="showdate" required="required"/>
-                                                    <div class="invalid-feedback"> Date is required </div>
+                                            <div class="row mb-1">
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" class="input form-control form-border" id="monthly" required autocomplete="off">
+                                                        <label class="mb-0 form-control-placeholder" for="monthly">Investment Amount</label>
+                                                        <div class="invalid-feedback"> Investment Amount is required </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <div class="select">
+                                                            <select class="select-text" required>
+                                                                <option value="" disabled selected></option>
+                                                                <option value="1">Option 1</option>
+                                                                <option value="2">Option 2</option>
+                                                                <option value="3">Option 3</option>
+                                                            </select>
+                                                            <span class="select-highlight"></span>
+                                                            <span class="select-bar"></span>
+                                                            <label class="select-label ">Funding Account</label>
+                                                        </div>
+                                                    </div>
                                             </div>
-                                        </div>
-
-                                        <div class="row">
+                                            <div class="row mb-2">
+                                                    <div class="form-group col-md-12 mb-3"><small class="form-text text-muted font-weight-bold">Select Investment Duration in Year & Month</small></div>
+                                                    <div class="form-group col-md-6">
+                                                            <div class="select">
+                                                                <select class="select-text" required>
+                                                                    <option value="" disabled selected></option>
+                                                                    <option value="1">1 Year</option>
+                                                                    <option value="2">2 Years</option>
+                                                                    <option value="3">3 Years</option>
+                                                                </select>
+                                                                <span class="select-highlight"></span>
+                                                                <span class="select-bar"></span>
+                                                                <label class="select-label ">Year(s)</label>
+                                                            </div>
+                                                        </div>
+                                                    <div class="form-group col-md-6">
+                                                        <div class="select">
+                                                            <select class="select-text" required>
+                                                                <option value="" disabled selected></option>
+                                                                <option value="1">1 Month</option>
+                                                                <option value="2">2 Months</option>
+                                                                <option value="3">3 Months</option>
+                                                            </select>
+                                                            <span class="select-highlight"></span>
+                                                            <span class="select-bar"></span>
+                                                            <label class="select-label ">Month(s)</label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="row mt-0">
+                                                    <div class="form-group col-md-12 mb-4">
+                                                        <div class="select">
+                                                            <select class="select-text" required>
+                                                                <option value="" disabled selected></option>
+                                                                <option value="1">Monthly Investment</option>
+                                                                <option value="2">Quarterly Investment</option>
+                                                                <option value="3">Bi-Annual Investment</option>
+                                                                <option value="4">Yearly Investment</option>
+                                                            </select>
+                                                            <span class="select-highlight"></span>
+                                                            <span class="select-bar"></span>
+                                                            <label class="select-label ">Select Investment Frequency</label>
+                                                        </div>
+                                                        <!-- <hr class="mt-4"> -->
+                                                    </div>
+                                                    
+                                                </div>
+    
+                                            <div class="row">
+                                                <div class="form-group col-md-12 mb-1"><small class="form-text text-muted font-weight-bold">Select preferred Investment date</small></div>
+                                                <div class="form-group col-md-6 mb-4">
+                                                    <div>
+                                                        <div class="md-radio md-radio-inline">
+                                                            <input id="yesCheck" type="radio" name="in" onclick="javascript:yesnoCheck();" checked>
+                                                            <label for="yesCheck">Invest Today</label>
+                                                        </div>
+                                                        <div class="md-radio md-radio-inline">
+                                                            <input id="noCheck" type="radio" name="in" onclick="javascript:yesnoCheck();">
+                                                            <label for="noCheck">Invest in the Future</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="form-group col-md-6">
-                                                    <input type="text" class="input form-control form-border" id="monthly" required autocomplete="off">
-                                                    <label class="mb-0 form-control-placeholder" for="monthly">Monthly Deposit</label>
-                                                    <div class="invalid-feedback"> Monthly Deposit is required </div>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <div class="select">
-                                                        <select class="select-text" required>
-                                                            <option value="" disabled selected></option>
-                                                            <option value="1">Option 1</option>
-                                                            <option value="2">Option 2</option>
-                                                            <option value="3">Option 3</option>
-                                                        </select>
-                                                        <span class="select-highlight"></span>
-                                                        <span class="select-bar"></span>
-                                                        <label class="select-label ">Funding Account</label>
-                                                    </div>
-                                                </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="form-group col-md-12 mb-1"><small class="form-text text-muted font-weight-bold">Select Investment Beneficiary</small></div>
-                                            <div class="form-group col-md-6 mb-1">
-                                                <div>
-                                                    <div class="">
-                                                        <input id="yesBene" type="radio" name="be" onclick="javascript:yesnoBene();" checked>
-                                                        <label for="yesBene">Self Investment</label>
-                                                    </div>
-                                                    <div class="">
-                                                        <input id="noBene" type="radio" name="be" onclick="javascript:yesnoBene();">
-                                                        <label for="noBene">Beneficiary Investment</label>
-                                                    </div>
+                                                        <small class="form-text text-muted font-weight-bold" id="investtitle"></small>
+                                                        <input type="text" class="dateselect input form-control form-border" id="showdate" required="required"/>
+                                                        <div class="invalid-feedback"> Date is required </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group col-md-6">
-                                                    <small class="form-text text-muted font-weight-bold" id="benetitle"></small>
-                                                    <div class="select">
+    
+                                            <div class="row">
+                                                <div class="form-group col-md-12 mb-1"><small class="form-text text-muted font-weight-bold">Select Investment Beneficiary</small></div>
+                                                <div class="form-group col-md-6 mb-1">
+                                                    <div>
+                                                        <div class="md-radio md-radio-inline">
+                                                            <input id="yesBene" type="radio" name="be" onclick="javascript:yesnoBene();" checked>
+                                                            <label for="yesBene">Self Investment</label>
+                                                        </div>
+                                                        <div class="md-radio md-radio-inline">
+                                                            <input id="noBene" type="radio" name="be" onclick="javascript:yesnoBene();">
+                                                            <label for="noBene">Beneficiary Investment</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                        <small class="form-text text-muted font-weight-bold" id="benetitle"></small>
+                                                        <div class="select">
                                                             <select class="select-text" id="showbene" required>
                                                                 <option value="" disabled selected></option>
                                                                 <option value="1">Option 1</option>
@@ -159,29 +195,21 @@
                                                             <span class="select-bar"></span>
                                                             <label class="select-label" id="selectlable"></label>
                                                         </div>
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <hr class="mb-4">
-                                        <div class="row">
-                                            <div class="form-group col-md-12">
-                                                <input type="text" class="input form-control form-border" id="refcode" required autocomplete="off">
-                                                <label class="mb-0 form-control-placeholder" for="refcode">Referral Code</label>
-                                                <small class="form-text text-muted">Optional | If you have a Branch Referral Code, please input. Thank you.</small>
+    
+                                            <hr class="mb-4">
+    
+                                            <div class="row">
+                                                <div class="form-group col-md-12">
+                                                    <input type="text" class="input form-control form-border" id="refcode" required autocomplete="off">
+                                                    <label class="mb-0 form-control-placeholder" for="refcode">Referral Code</label>
+                                                    <small class="form-text text-muted">Optional | If you have a Branch Referral Code, please input. Thank you.</small>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <button type="submit" value="Submit" class="btn btn-sm btn-primary btn-block mb-3">Next</button>
-                                        <!-- <div class="row mt-4">
-                                            <div class="col-md-6 form-group d-block"> 
-                                                <label>Email address</label> 
-                                                <input type="email" class="form-control" placeholder="Enter email"> 
-                                                <small class="form-text text-muted">We'll never share your email with anyone else.</small> 
-                                            </div>
-                                            <div class="col-md-6 form-group">
-                                                   
-                                            </div>
-                                        </div> -->
-                                </form>
+    
+                                            <button type="submit" value="Submit" class="btn btn-sm btn-primary btn-block mb-3">Next</button>
+                                    </form>
                             </div>
                             </div>
                         </div>
