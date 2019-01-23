@@ -171,53 +171,6 @@
                 // startDate: '-3d'
             });
         });
-
-        var d = moment().format("d/D/YYYY");
-        document.getElementById('showdate').setAttribute("disabled","disabled");
-        // document.getElementById("showdate").setAttribute('placeholder',d);
-        document.getElementById("investtitle").innerHTML = "Choose Investment Option";
-        function yesnoCheck() 
-        {
-            
-            if (document.getElementById('yesCheck').checked) 
-            {
-                document.getElementById('showdate').setAttribute("disabled","disabled");
-                // document.getElementById('showdate').removeAttribute('placeholder');
-                document.getElementById('showdate').style.opacity = "0.5";
-                document.getElementById("showdate").value = "";
-                document.getElementById("investtitle").innerHTML = "You selected TODAY";
-            }
-            else {
-                document.getElementById('showdate').removeAttribute("disabled");
-                document.getElementById('showdate').style.opacity = "1";
-                // document.getElementById("showdate").setAttribute('placeholder','Select Future Date');
-                document.getElementById("investtitle").innerHTML = "Please select a future Investment Date";
-            }
-        }
-
-        document.getElementById('showbene').setAttribute("disabled","disabled");
-        // document.getElementById("showbene").setAttribute('placeholder',d);
-        document.getElementById("benetitle").innerHTML = "Choose Investment Option";
-        function yesnoBene() 
-        {
-            
-            if (document.getElementById('yesBene').checked) 
-            {
-                document.getElementById('showbene').setAttribute("disabled","disabled");
-                document.getElementById('showbene').style.opacity = "0.5";
-                document.getElementById("showbene").value = "";
-                document.getElementById("benetitle").innerHTML = "You selected SELF INVESTMENT";
-                document.getElementById("selectlable").innerHTML = "Funding Account";
-            }
-            else {
-                document.getElementById('showbene').removeAttribute("disabled");
-                document.getElementById('showbene').style.opacity = "0.5";
-                // document.getElementById("showbene").setAttribute('placeholder','Select Beneficiary Account');
-                document.getElementById("benetitle").innerHTML = "";
-                document.getElementById("selectlable").innerHTML = "Funding Account";
-            }
-        }
-
     </script>
 </body>
 
