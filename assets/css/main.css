@@ -3443,16 +3443,17 @@ tbody.collapse.show {
     color: #2e2e2e; }
 
 .alert-success {
-  color: #044900;
+  color: #fff;
   background-color: #cde8cc;
-  border-color: #badfb8; }
+  /* border-color: #badfb8;  */
+}
   .alert-success hr {
     border-top-color: #a9d7a6; }
   .alert-success .alert-link {
     color: #011600; }
 
 .alert-info {
-  color: #006a85;
+  color: #000;
   background-color: #ccf5ff;
   border-color: #b8f1ff; }
   .alert-info hr {
@@ -3461,18 +3462,20 @@ tbody.collapse.show {
     color: #004152; }
 
 .alert-warning {
-  color: #856900;
+  color: #000;
   background-color: #fff4cc;
-  border-color: #fff0b8; }
+  /* border-color: #fff0b8;  */
+}
   .alert-warning hr {
     border-top-color: #ffeb9f; }
   .alert-warning .alert-link {
     color: #524100; }
 
 .alert-danger {
-  color: #6d0007;
+  color: #fff;
   background-color: #f6cccf;
-  border-color: #f2b8bb; }
+  /* border-color: #f2b8bb;  */
+}
   .alert-danger hr {
     border-top-color: #eea2a6; }
   .alert-danger .alert-link {
